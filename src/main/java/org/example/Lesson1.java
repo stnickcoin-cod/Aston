@@ -10,6 +10,7 @@ public class Lesson1 {
         System.out.println("Banana");
         System.out.println("Apple");
     }
+
     public static void checkSumSign() {
         int a = 2, b = 5;
         int sum = a + b;
@@ -19,55 +20,63 @@ public class Lesson1 {
             System.out.println("Сумма отрицательная");
         }
     }
-    public static void printColor(){
-        int value=34;
-        if (value<=0) {
+
+    public static void printColor() {
+        int value = 34;
+        if (value <= 0) {
             System.out.println("Красный");
-        } else if (value>0 && value <=100) {
+        } else if (value > 0 && value <= 100) {
             System.out.println("Жёлтый");
-        }else {
+        } else {
             System.out.println("Зелёный");
         }
     }
-    public static void compareNumbers(){
-        int a=5, b=10;
-        if (a>=b) {
+
+    public static void compareNumbers() {
+        int a = 5, b = 10;
+        if (a >= b) {
             System.out.println("a>=b");
         } else {
             System.out.println("a<b");
         }
     }
-    public static boolean checkRange(int a,int b){
-        int sum=a+b;
-        return sum>=10 && sum<=20;
+
+    public static boolean checkRange(int a, int b) {
+        int sum = a + b;
+        return sum >= 10 && sum <= 20;
     }
-    public static void positivelyOrNegatively(int n){
+
+    public static void positivelyOrNegatively(int n) {
         if (n >= 0) {
             System.out.println("Положительное");
         } else {
             System.out.println("Отрицательное");
         }
     }
-    public static boolean trueOrFalse(int a){
-        return a <0;
+
+    public static boolean trueOrFalse(int a) {
+        return a < 0;
     }
-    public static void cycleLine(String t, int a){
-        for (int i=0; i<a; i++){
+
+    public static void cycleLine(String t, int a) {
+        for (int i = 0; i < a; i++) {
             System.out.println(t);
         }
     }
+
     public static boolean leapYear(int year) {
-        if (year%400==0) {
+        if (year % 400 == 0) {
             return true;
-        }else if (year%100==0) {
+        } else if (year % 100 == 0) {
             return false;
-        }else if (year%4==0) {
+        } else if (year % 4 == 0) {
             return true;
-        }else {
+        } else {
             return false;
         }
     }
-       public static void replacement(String[] args) {
+
+    public static void replacement(String[] args) {
         int[] array = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
         System.out.println("Исходный массив: " + Arrays.toString(array));
         for (int i = 0; i < array.length; i++) {
@@ -80,6 +89,17 @@ public class Lesson1 {
         System.out.println("Изменённый массив: " + Arrays.toString(array));
     }
 
+    public static void fillInTheArray(String[] args) {
+        int[] array = new int[100];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = i + 1;
+        }
+        System.out.println("Заполненный массив: "+Arrays.toString(array));
+
+    }
+
+
+
 
     public static void main(String[] args){
         printThreeWords();
@@ -91,5 +111,7 @@ public class Lesson1 {
         cycleLine("test", 5);
         System.out.println(leapYear(2026));
         replacement(args);
-            }
+        fillInTheArray(args);
+
+                    }
     }
