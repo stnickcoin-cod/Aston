@@ -94,14 +94,45 @@ public class Lesson1 {
         for (int i = 0; i < array.length; i++) {
             array[i] = i + 1;
         }
-        System.out.println("Заполненный массив: "+Arrays.toString(array));
+        System.out.println("Заполненный массив: " + Arrays.toString(array));
 
     }
 
+    public static void lessThanSixX2(String[] args) {
+        int[] array = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+        System.out.println("Исходный массив: " + Arrays.toString(array));
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] < 6) {
+                array[i] *= 2;
+            }
+        }
+        System.out.println("Изменённый массив: " + Arrays.toString(array));
+    }
+
+    public static void squareArray(String[] args) {
+        int size = 5;
+        int[][] square = new int[size][size];
+        for (int i = 0; i < size; i++) {
+            square[i][i] = 1;
+        }
+        System.out.println("Квадратный массив с заполненной главной диагональю:");
+        for (int i = 0; i < size; i++) {
+            System.out.println(Arrays.toString(square[i]));
+        }
+    }
+
+    public static int[] createArray(int len, int initialValue) {
+        int[] array = new int[len];
+
+        for (int i = 0; i < len; i++) {
+            array[i] = initialValue;
+        }
+
+        return array;
+    }
 
 
-
-    public static void main(String[] args){
+    public static void main(String[] args) {
         printThreeWords();
         printColor();
         compareNumbers();
@@ -112,6 +143,9 @@ public class Lesson1 {
         System.out.println(leapYear(2026));
         replacement(args);
         fillInTheArray(args);
-
-                    }
+        lessThanSixX2(args);
+        squareArray(args);
+        int[] arr1 = createArray(6, 8);
+        System.out.println("Массив длиной 6, заполненный 8: " + java.util.Arrays.toString(arr1));
     }
+}
