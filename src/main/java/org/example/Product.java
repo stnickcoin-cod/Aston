@@ -17,7 +17,7 @@ public class Product {
         this.booking = booking;
     }
 
-    public void getinfo() {
+    public void getinfo1() {
         System.out.println("Название: " + name);
         System.out.println("Дата производства: " + productiondate);
         System.out.println("Производитель: " + manufacturer);
