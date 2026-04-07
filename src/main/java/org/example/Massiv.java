@@ -4,8 +4,7 @@ package org.example;
 class Massiv {
     Product[] productsArray = new Product[5];
 
-    // Инициализация массива товаров
-    public void productArray() {
+       public void productArray() {
         productsArray[0] = new Product("Samsung S25 Ultra", "01.02.2025",
                 "Samsung Corp.", "Korea", 5599, true);
         productsArray[1] = new Product("Samsung S7", "04.07.2025",
@@ -18,7 +17,6 @@ class Massiv {
                 "Samsung Corp.", "Korea", 19599, true);
     }
 
-    // Вывод всех товаров
     public void displayAllProducts() {
         System.out.println("Массив товаров:");
         for (int i = 0; i < productsArray.length; i++) {
