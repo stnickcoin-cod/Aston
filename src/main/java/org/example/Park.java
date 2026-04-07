@@ -5,10 +5,12 @@ import java.util.List;
 
 public class Park {
     private String name;
+    private String timeWork;
     private List<Attraction> attractions;
 
-    public Park(String name) {
+    public Park(String name,String timeWork) {
         this.name = name;
+        this.timeWork = timeWork;
         this.attractions = new ArrayList<>();
     }
 
@@ -48,6 +50,7 @@ public class Park {
 
     public void displayAllAttractions() {
         System.out.println("Парк: " + name);
+        System.out.println("Время работы:"+ timeWork);
         System.out.println("Список аттракционов:");
         System.out.println("=================");
 
