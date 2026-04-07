@@ -1,5 +1,5 @@
 package org.example;
-import java.util.Arrays;
+
 public class Lesson2 {
     public static void main(String[] args) {
         Product product1 = new Product(
@@ -7,10 +7,11 @@ public class Lesson2 {
                 "22.11.2025",
                 "Samsung Electronics",
                 "Южная Корея",
-                 54000,
+                54000,
                 false);
-        product1.getinfo1();
+        product1.getInfo();
         Massiv massiv = new Massiv();
-        massiv.printProducts();
-        }
+        massiv.productArray();
+        massiv.displayAllProducts();
     }
+}
