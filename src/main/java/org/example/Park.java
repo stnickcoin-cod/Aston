@@ -32,15 +32,7 @@ public class Park {
             System.out.println("---");
         }
 
-        public String getAttractionName() {
-            return attractionName;
-        }
-        public String getWorkingHours() {
-            return workingHours;
-        }
-        public double getCost() {
-            return cost;
-        }
+
     }
 
     public void addAttraction(String name, String hours, double cost) {
