@@ -46,13 +46,9 @@ public class Park {
         System.out.println("Список аттракционов:");
         System.out.println("=================");
 
-        if (attractions.isEmpty()) {
-            System.out.println("В парке пока нет аттракционов.");
-        } else {
-            for (int i = 0; i < attractions.size(); i++) {
+          for (int i = 0; i < attractions.size(); i++) {
                 System.out.println("Аттракцион №" + (i + 1) + ":");
                 attractions.get(i).printInfo();
             }
         }
     }
-}
