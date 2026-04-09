@@ -1,5 +1,7 @@
 package org.example;
 
+import java.awt.*;
+
 public class Lesson3 {
     public static void main(String[] args) {
 
