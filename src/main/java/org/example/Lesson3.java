@@ -20,7 +20,7 @@ public class Lesson3 {
         System.out.println("Собак: " + Dog.getDogCount());
 
         System.out.println("\n=== ТЕСТИРОВАНИЕ МИСКИ И КОТОВ ===");
-        Bowl bowl = new Bowl(15); // Миска с 15 единицами еды
+        Bowl bowl = new Bowl(15);
 
         Cat[] cats = {catMurzik, catBarsik, new Cat("Васька")};
 
