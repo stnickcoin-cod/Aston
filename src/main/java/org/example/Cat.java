@@ -5,8 +5,7 @@ public class Cat extends Animal {
     private static int catCount = 0;
 
     public Cat(String name) {
-        super(name, 200, 0); // Кот: бег 200 м, плавание 0 м
-        this.isFull = false;
+        super(name, 200, 0);
         catCount++;
     }
     public void eat(Bowl bowl, int foodAmount) {

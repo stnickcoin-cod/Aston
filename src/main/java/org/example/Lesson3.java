@@ -12,12 +12,8 @@ public class Lesson3 {
         dogBobik.swim(5);
         catMurzik.run(100);
         catBarsik.swim(3);
-
-
         dogBobik.run(-50);
         catMurzik.swim(-10);
-
-
         System.out.println("\n=== СТАТИСТИКА СОЗДАННЫХ ЖИВОТНЫХ ===");
         System.out.println("Всего животных: " + Animal.getAnimalCount());
         System.out.println("Котов: " + Cat.getCatCount());
@@ -31,16 +27,12 @@ public class Lesson3 {
         for (Cat cat : cats) {
             cat.eat(bowl, 10);
         }
-
         System.out.println("\n=== ИНФОРМАЦИЯ О СЫТОСТИ КОТОВ ===");
         for (Cat cat : cats) {
             System.out.println(cat.getName() + " сыт: " + cat.isFull());
         }
-
         System.out.println("\n=== ДОБАВЛЕНИЕ ЕДЫ В МИСКУ ===");
         bowl.addFood(20);
-
-        // Попробуем покормить ещё раз
         cats[2].eat(bowl, 15);
         System.out.println(cats[2].getName() + " сыт: " + cats[2].isFull());
     }
