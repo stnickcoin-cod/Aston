@@ -44,7 +44,7 @@ public class MtsOnlineCommissionTest {
         void homeInternetConnectionTest() {
             driver.get("https://www.mts.by");
             MtsOnlineCommission
-                    .acceptCookiesButtonClick()
+
                     .communicationServicesSuttonClick()
                     .homeInternetClick()
                     .telNumberLike()
@@ -56,7 +56,7 @@ public class MtsOnlineCommissionTest {
         void installmentPlanTest() {
         driver.get("https://www.mts.by");
         MtsOnlineCommission
-                .acceptCookiesButtonClick()
+
                 .communicationServicesSuttonClick()
                 .installmentPlanClick()
                 .subscriberNumberLike()
@@ -67,7 +67,7 @@ public class MtsOnlineCommissionTest {
          void arrearsTest() {
         driver.get("https://www.mts.by");
         MtsOnlineCommission
-                .acceptCookiesButtonClick()
+
                 .communicationServicesSuttonClick()
                 .arrearsClick()
                 .accountNumber1Like()
