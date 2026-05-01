@@ -7,17 +7,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class MtsOnlineCommission {
     private static WebDriver driver;
     private static WebDriverWait wait;
     public MtsOnlineCommission(WebDriver driver, WebDriverWait wait) {
-        this.driver = driver;
-        this.wait = wait;
+        MtsOnlineCommission.driver = driver;
+        MtsOnlineCommission.wait = wait;
     }
 
      String telephonNumber = "Номер телефона";
